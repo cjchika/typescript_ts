@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './ToDoList.module.css'
 
-const ToDoList: React.FC<{text: string}> = ({text}) => {
+const ToDoList: React.FC<{text: string, onRemoveTodo: () => void}> = ({text, onRemoveTodo}) => {
+    
   return (
-    <li className={styles.item}>{text}</li>
+    <li className={styles.item} onClick={onRemoveTodo}>{text}</li>
   )
 }
 
