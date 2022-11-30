@@ -12,7 +12,7 @@ function App() {
   setTodos((prevTodos) => {
     return prevTodos.concat(newToDo)
   })
-  console.log(newToDo);
+  console.log(todos);
   
  }
 
